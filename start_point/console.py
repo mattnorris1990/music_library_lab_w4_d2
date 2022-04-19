@@ -25,10 +25,20 @@ album_repository.save(album4)
 # album_repository.delete_all()
 # artist_repository.delete_all()
 
-artists = artist_repository.select_all()
-for artist in artists:
-    print(artist.__dict__)
+# artists = artist_repository.select_all()
+# for artist in artists:
+#     print(artist.__dict__)
 
-albums = album_repository.select_all()
-for album in albums:
-    print(album.__dict__)
+# albums = album_repository.select_all()
+# for album in albums:
+#     print(album.__dict__)
+    
+# artist_albums = artist_repository.album(artist2)
+# for album in artist_albums:
+#     print(album.__dict__)
+
+# artist3.name = "Bloc Party"
+# artist_repository.update(artist3)
+
+album4.title = "Silent Alarm"
+album_repository.update(album4)
