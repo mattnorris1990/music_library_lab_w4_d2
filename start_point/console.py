@@ -37,8 +37,11 @@ album_repository.save(album4)
 # for album in artist_albums:
 #     print(album.__dict__)
 
-# artist3.name = "Bloc Party"
-# artist_repository.update(artist3)
+artist3.name = "Bloc Party"
+artist_repository.update(artist3)
 
 album4.title = "Silent Alarm"
 album_repository.update(album4)
+
+album_repository.delete(album4.id)
+artist_repository.delete(artist3.id)
